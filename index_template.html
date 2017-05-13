@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>URB Tours</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- stylesheet's section -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- stylesheet's section END -->
+
+</head>
+<body>
+	
+
+	<!-- page top section start -->
+	<button class="btn-mobile"></button>
+	<div class="nav-mobile">
+		<ul>
+			<li><a href="#" data-toggle="modal" data-target="#login-modal">Log in</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#signUp-modal">Register</a></li>
+			<li><a href="#">Women profiles</a></li>
+			<li><a href="#">Search</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Support</a></li>
+			<li><a href="#">About Us</a></li>
+		</ul>
+	</div>
+	<header class="header-tours">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="top-buttons_holder">
+						<button data-toggle="modal" data-target="#login-modal" class="header-btn btn-log-in">Log in</button>
+						<button data-toggle="modal" data-target="#signUp-modal" class="header-btn btn-register">Register</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="<?php echo base_url(); ?>" class="logo"><img src="img/logo.png" alt="Ukrainian real brides logo" width="226" height="144"></a>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="nav-tours">
+					<ul class="nav-tours_left">
+						<li><a href="#">Women profiles</a></li>
+						<li class="middle-link"><a href="#">Search</a></li>
+						<li><a href="#">Services</a></li>
+					</ul>
+					<div class="behind-logo"></div>
+					<ul class="nav-tours_right">
+						<li><a href="#">Blog</a></li>
+						<li class="middle-link"><a href="#">Support</a></li>
+						<li><a href="#">About Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="tours-banner_wrap">
+		<div class="tours-banner">
+			<div class="banner-box">
+				<div class="banner-box_top">
+					<span class="banner-sticker">love destination</span>
+					<div class="banner-title">
+						<div class="banner-title-left">
+							<span>30-05 August</span>
+							<span>06-12 August</span> 
+						</div>
+						<div class="banner-title-right">Cyprus</div>
+						
+					</div>
+					<p class="banner-paragraph">Meet the lady of your dreams and have a great holiday</p>
+					<button data-target="#modal-participate" data-toggle="modal" class="banner-btn">I want</button>
+				</div>
+			</div>
+
+			<ul class="social-buttons">
+				<li>
+					<a class="social-buttons_link" href="https://www.facebook.com/ukrainianrealbrides" target="_blank">
+						<img src="https://ukrainianrealbrides.com/content//user_interface/img/new-main/facebook.svg" alt="Ukrainian real brides Facebook account" width="32" height="32">
+					</a>
+				</li>
+				<li>
+					<a class="social-buttons_link" href="https://www.instagram.com/ukrainianrealbrides/" target="_blank">
+						<img src="https://ukrainianrealbrides.com/content/user_interface/img/new-main/instagram.svg" alt="Ukrainian real brides Instagram account" width="32" height="32">
+					</a>
+				</li>
+				<li>
+					<a class="social-buttons_link" href="https://www.youtube.com/channel/UCh3M5uJ4v01u-7VN7l1bFvQ" target="_blank">
+						<img src="https://ukrainianrealbrides.com/content/user_interface/img/new-main/youtube.svg" alt="Ukrainian real brides YouTube account" width="32" height="32">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- page top section end -->
+
+	<!-- contact us section -->
+	<section class="contact" id="contact-us-anchor">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="contact-subheading">Check the dates and destinations of our upcoming tours and contact us if you want to learn more about the tours.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 contact-form_hold">
+					<div class="contact-form">
+						<div class="row">
+							<div class="col-md-12">
+								<h3 class="h3-tours">Contact Us</h3>
+							</div>
+						</div>
+						<form class="contact-us-form" name="Contact us form" id="contact-form">
+							<div class="success">
+								<p>Thank you!</p>
+								<p>Your letter has been successfully sent...</p>
+								<img src="<?php echo base_url(); ?>content/cyprus/img/success-form.png" alt="Success form">
+							</div>
+							<div class="row">
+								<div class="col-md-5 form-row_hold">
+									<input type="text" class="form-input" placeholder="Name">
+									<span class="error-message"></span>
+								</div>
+								<div class="col-md-5 col-md-offset-2 form-row_hold">
+									<input type="email" class="form-input" placeholder="Email">
+									<span class="error-message"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-5 form-row_hold">
+									<input type="text" class="form-input" placeholder="Country">
+									<span class="error-message"></span>
+								</div>
+								<div class="col-md-5 col-md-offset-2 form-row_hold">
+									<input type="text" class="form-input" placeholder="Skype">
+									<span class="error-message"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-5 form-row_hold">
+									<input type="text" class="form-input error" placeholder="Phone number">
+									<span class="error-message">Enter correct phone number</span>
+								</div>
+								<div class="col-md-5 col-md-offset-2 form-row_hold">
+									<input type="text" class="form-input" placeholder="Link to your Facebook page">
+									<span class="error-message"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<p class="form-subtitle">How would you like us to contact you:</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="checkbox-holder">
+
+										<div class="checkbox-item">
+											<div class="checkbox-item_hold">
+												<input type="checkbox" id="facebook-call" name="Facebook" value="Facebook">
+												<label class="check-label" for="facebook-call"></label>
+											</div>
+											<label for="facebook-call">Facebook</label>
+										</div>
+
+										<div class="checkbox-item">
+											<div class="checkbox-item_hold">
+												<input type="checkbox" id="email-call" name="Email" value="Email">
+												<label class="check-label" for="facebook-call"></label>
+											</div>
+											<label for="email-call">Email</label>
+										</div>
+
+										<div class="checkbox-item">
+											<div class="checkbox-item_hold">
+												<input type="checkbox"  name="Phone" value="Phone" id="phone-call">
+												<label class="check-label" for="phone-call"></label>
+											</div>
+											<label for="phone-call">Phone Call</label>
+										</div>
+
+										<div class="checkbox-item">
+											<div class="checkbox-item_hold">
+												<input type="checkbox"  name="Viber" value="Viber" id="viber-call">
+												<label class="check-label" for="viber-call"></label>
+											</div>
+											<label for="viber-call">Viber</label>
+										</div>
+
+										<div class="checkbox-item">
+											<div class="checkbox-item_hold">
+												<input type="checkbox"  name="Whatsapp" value="Whatsapp" id="Whatsapp-call">
+												<label class="check-label" for="Whatsapp-call"></label>
+											</div>
+											<label for="Whatsapp-call">Whatsapp</label>
+										</div>
+
+										<div class="checkbox-item">
+											<div class="checkbox-item_hold">
+												<input type="checkbox"  name="Telegramm" value="Telegramm" id="Telegramm-call">
+												<label class="check-label" for="Telegramm-call"></label>
+											</div>
+											<label for="Telegramm-call">Telegramm</label>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3 preferred-method">
+									<input type="text" class="form-input" placeholder="Or enter preferred method of contact">
+								</div>
+							</div>
+							<button type="submit" class="btn-tour send">Send</button>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- contact us sections END -->
+
+	<!-- join us section -->
+	<section class="join-us_hold">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-11 col-md-offset-1">
+					<div class="join-us">
+						<p class="join-us-title">Premium online and offline dating service</p>
+						<button data-toggle="modal" data-target="#signUp-modal" class="btn-tour">Join us now</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- join us section END -->
+
+	<!-- page bottom / footer section -->
+	<footer class="footer-hold">
+		<div class="container">
+			<div class="row footer-top">
+				<div class="col-md-7 col-md-offset-1 footer-nav">
+					<ul class="footer-nav_col">
+						<li>
+							<span class="footer-nav-title">Services</span>
+						</li>
+						<li>
+							<a href="#">Chatting</a>
+						</li>
+						<li>
+							<a href="#">Messaging</a>
+						</li>
+						<li>
+							<a href="#">Gift Service</a>
+						</li>
+						<li>
+							<a href="#">Romance Tour</a>
+						</li>
+						<li>
+							<a href="#">VIS</a>
+						</li>
+					</ul>
+
+					<ul class="footer-nav_col">
+						<li>
+							<span class="footer-nav-title">Members</span>
+						</li>
+						<li>
+							<a href="#">Search</a>
+						</li>
+						<li>
+							<a href="#">Women profiles</a>
+						</li>
+						<li>
+							<a href="#">Girls online</a>
+						</li>
+					</ul>
+
+					<ul class="footer-nav_col">
+						<li>
+							<span class="footer-nav-title">Information</span>
+						</li>
+						<li>
+							<a href="#">Support</a>
+						</li>
+						<li>
+							<a href="#">About us</a>
+						</li>
+						<li>
+							<a href="#">Blog</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-md-offset-1 footer-logo_hold">
+					<a href="<?php echo base_url(); ?>" class="footer-logo"><img src="https://ukrainianrealbrides.com/content/cyprus/img/logo-footer.png" alt="Ukrainian real brides" width="212" height="120"></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-11 col-md-offset-1 footer-bottom">
+					<strong class="footer-phone">+1-917-722-5338</strong>
+					<ul class="policy-nav">
+						<li><a href="#contact-us-anchor">Contact Us</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Billing Policy</a></li>
+						<li><a href="#">Terms And Conditions</a></li>
+					</ul>
+					<ul class="social-buttons">
+						<li>
+							<a class="social-buttons_link" href="https://www.facebook.com/ukrainianrealbrides" target="_blank">
+								<img src="https://ukrainianrealbrides.com/content/user_interface/img/new-main/facebook.svg" alt="Ukrainian real brides Facebook page" width="32" height="32">
+							</a>
+						</li>
+						<li>
+							<a class="social-buttons_link" href="https://www.instagram.com/ukrainianrealbrides/" target="_blank">
+								<img src="https://ukrainianrealbrides.com/content/user_interface/img/new-main/instagram.svg" alt="Ukrainian real brides Instagram page" width="32" height="32">
+							</a>
+						</li>
+						<li>
+							<a class="social-buttons_link" href="https://www.youtube.com/channel/UCh3M5uJ4v01u-7VN7l1bFvQ" target="_blank">
+								<img src="https://ukrainianrealbrides.com/content/user_interface/img/new-main/youtube.svg" alt=" Ukrainian real brides YouTube page" width="32" height="32">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="page-bottom">UkrainianRealBrides 2015-2016 © All rights reserved.</div>
+	</footer>
+	<!-- page bottom / footer section END -->
+
+	<!-- modal's section -->
+	<div class="modal fade login-popup" id="signUp-modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button class="exit" data-dismiss="modal" aria-hidden="true"></button>
+					<span class="title-modal">Registration</span>
+					<form class="form-horizontal" id="signup-form" autocomplete="off">
+						<div class="form-row">
+							<input type="text" class="form-control" placeholder="Name" autofocus tabindex="1" id="user-name" autocomplete="off">
+							<span id="user-name-error-text" class="form-error-message"></span>
+						</div>
+						<div class="form-row">
+							<input type="text" class="form-control" placeholder="Email Address" tabindex="2" id="user-email" autocomplete="off">
+							<span id="user-email-error-text" class="form-error-message"></span>
+						</div>
+						<div class="form-row">
+							<input type="password" class="form-control" placeholder="Password" tabindex="2" id="user-password">
+							<span class="view-password">
+								<img src="<?php echo base_url(); ?>content/user_interface/img/pop-ups/password_button.png" class="icon" alt="Show password button" data-toggle="tooltip" title="Click to show password">
+							</span>
+							<span id="user-password-error-text" class="form-error-message"></span>
+						</div>
+						<button class="btn-register-modal" id="signUp">Registration</button>
+						<div class="modal-social-buttons">
+							<button class="btn btn-social btn-xs btn-facebook" id="fb-button"><i class="fa fa-facebook"></i> | Register with Facebook</button>
+							<button class="btn btn-social btn-xs btn-google-plus" id="google-signup"><i class="fa fa-google-plus"></i> | Register with Google+</button>
+						</div>
+						<span class="terms-conditions">
+							<a href="<?php echo base_url(); ?>user_interface/terms" target="_blank">terms & conditions</a> and <a href="<?php echo base_url(); ?>user_interface/privacy" target="_blank">privacy policy</a>.
+						</span>
+					</form>
+				</div>
+				<div class="modal-bottom">
+					<span>Already register? <a href="#" id="login-modal-start" name="login">Log in</a> now</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade login-popup" id="login-modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button class="exit" data-dismiss="modal" aria-hidden="true"></button>
+					<span class="title-modal">Log in</span>
+					<span class="login-error"></span>
+					<form class="form-horizontal" id="login-form" autocomplete="off">
+						<div class="form-row">
+							<input type="text" class="form-control" placeholder="Email Address" tabindex="2" id="login-user-email" autocomplete="off">
+						</div>
+						<div class="form-row">
+							<input type="password" class="form-control" placeholder="Password" tabindex="3" id="login-user-password" autocomplete="off">
+							<span class="view-password">
+								<img src="<?php echo base_url(); ?>content/user_interface/img/pop-ups/password_button.png" class="icon" name="login" alt="Show password button"  data-toggle="tooltip" title="Click to show password">
+							</span>
+						</div>
+						<span class="forget-password">
+							<a href="#forgot-modal" data-toggle="modal" data-dismiss="modal">Forgot login or password?</a>
+						</span>
+						<button class="btn-register-modal" id="login">Log In</button>
+						<div class="modal-social-buttons">
+							<button class="btn btn-social btn-xs btn-facebook" id="fb-button-login"><i class="fa fa-facebook"></i> | Log In with Facebook</button>
+							<button class="btn btn-social btn-xs btn-google-plus" id="google-signup-login"><i class="fa fa-google-plus"></i>  | Log in with Google+</button>
+						</div>
+
+					</form>
+				</div>
+				<div class="modal-bottom">
+					<span>Not with us? <a href="#" id="signup-modal-start" name="signup">Register</a> now</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade login-popup forgot-popup" id="forgot-modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button class="exit" data-dismiss="modal" aria-hidden="true"></button>
+					<span class="title-modal">Access recovery</span>
+					<span class="h3">Please Enter your registration email and we’ll send you a password.</span>
+					<div class="form-row">
+						<input type="email" class="form-control" placeholder="E-mail" id="email-recovery">
+						<span class="form-error-message"></span>
+					</div>
+					<button class="btn-register-modal" id="recovery-password">Send</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modal-participate" id="modal-participate">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button class="exit" data-dismiss="modal" aria-hidden="true"></button>
+					<span class="title-modal">Participate</span>
+
+					<button class="btn-register-modal">Participate</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal's section END -->
+
+	<!-- script's section -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/common.js"></script>
+	<!-- script's section END -->
+
+</body>
+</html>

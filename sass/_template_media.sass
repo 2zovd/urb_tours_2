@@ -1,0 +1,365 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	.nav-mobile
+	  display: none
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .nav-tours,
+  .header-btn
+    display: none
+
+  .btn-mobile
+    display: block
+
+  .header-tours
+    background-size: auto 45px
+    margin-bottom: 80px
+    padding-top: 35px
+    .logo
+      max-width: 180px
+
+  .banner-box
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-justify-content: center
+    -moz-justify-content: center
+    -ms-justify-content: center
+    -o-justify-content: center
+    -ms-flex-pack: center
+    justify-content: center
+    -ms-align-items: center
+    -webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
+
+  .tours-banner_wrap .social-buttons
+    -webkit-transform: translate(0)
+    -ms-transform: translate(0)
+    -o-transform: translate(0)
+    transform: translate(0)
+
+  .banner-box_top
+    text-align: center
+
+  .banner-paragraph
+    margin: 0 auto 40px
+
+  .tour-ladies_holder
+    padding-left: 15px
+    padding-right: 15px
+    -webkit-justify-content: space-around
+    -moz-justify-content: space-around
+    -ms-justify-content: space-around
+    -o-justify-content: space-around
+    -ms-flex-pack: distribute
+    justify-content: space-around
+
+  .ladies-profile
+    width: 45%
+
+  .tours-details_border
+    -webkit-flex-wrap: wrap
+    -moz-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    -o-flex-wrap: wrap
+    flex-wrap: wrap
+
+  .tours-details_text p
+    max-width: 80%
+
+  .tours-details_border
+    min-height: auto
+    margin: 0 15px
+
+  .tours-details
+    background: none
+
+  .tour-detail_block
+    margin-bottom: 40px
+
+  .tour-detail_left
+    width: 100%
+
+  .tours-details
+    margin-bottom: 70px
+
+  .participate
+    padding: 25px
+    strong
+      font-size: 17px
+      line-height: 23px
+      margin-bottom: 20px
+
+  .days-row
+    -webkit-justify-content: center
+    -moz-justify-content: center
+    -ms-justify-content: center
+    -o-justify-content: center
+    -ms-flex-pack: center
+    justify-content: center
+
+  .tour-plan_holder
+    min-height: auto
+    background-size: 280px auto
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .tours-date_block
+    min-height: auto
+    margin: 0 15px
+    padding: 300px 15px 35px
+
+  .tours-date .h2, .tours-details .h2, .tour-plan .h2, .h2
+    text-align: center
+    font-size: 29px
+    line-height: 32px
+
+  .plan-dates
+    text-align: center
+
+  .join-us
+    -webkit-flex-wrap: wrap
+    -moz-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    -o-flex-wrap: wrap
+    flex-wrap: wrap
+    -ms-align-items: center
+    -webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-justify-content: center
+    -moz-justify-content: center
+    -ms-justify-content: center
+    -o-justify-content: center
+    -ms-flex-pack: center
+    justify-content: center
+    text-align: center
+    -webkit-flex-direction: column
+    -moz-flex-direction: column
+    -ms-flex-direction: column
+    -o-flex-direction: column
+    flex-direction: column
+
+  .join-us_hold
+    padding: 25px 15px
+
+  .join-us-title
+    font-size: 25px
+    line-height: 30px
+    margin-bottom: 30px
+
+  .footer-logo_hold
+    text-align: center
+
+  .footer-bottom
+    -webkit-flex-direction: column
+    -moz-flex-direction: column
+    -ms-flex-direction: column
+    -o-flex-direction: column
+    flex-direction: column
+
+  .footer-phone, .policy-nav, .social-buttons
+    margin-bottom: 25px
+
+  .tours-date
+    background-position: 50% 10%
+    background-size: auto 300px
+    margin-bottom: 200px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  .banner-box_top
+    padding: 0 15px
+
+  .banner-title
+    font-size: 30px
+    line-height: 40px
+
+  .banner-paragraph
+    font-size: 18px
+    line-height: 25px
+
+  .banner-box
+    margin: 70px 0 40px
+
+  .tours-banner_wrap
+    min-height: 300px
+    height: auto
+    background-position: 60% 0
+
+  .ladies-profile
+    width: 75%
+
+  .search-profile-info
+    padding-left: 25px
+
+  .profile-button, .view-profile-button
+    width: 80%
+
+  .tour-plan_holder
+    min-height: auto
+    background-size: 280px auto
+    background-position: 50% 0
+
+  .plan-border
+    padding-top: 300px
+    overflow: hidden
+
+  .day-title
+    font-size: 50px
+    line-height: 52px
+
+  .plan-border_block
+    padding: 0 15px
+
+  .day-subheding
+    font-size: 13px
+    line-height: 15px
+    background-size: 50px auto
+    padding-left: 50px
+    margin-bottom: 20px
+
+  .day-plan_text
+    font-size: 14px
+    line-height: 20px
+
+  .tour-plan
+    margin-bottom: 70px
+
+  .contact-form
+    padding: 50px 25px
+
+  .checkbox-holder
+    -webkit-justify-content: space-between
+    -moz-justify-content: space-between
+    -ms-justify-content: space-between
+    -o-justify-content: space-between
+    -ms-flex-pack: justify
+    justify-content: space-between
+
+  .checkbox-item
+    margin: 15px 15px
+
+  .footer-nav_col
+    margin-bottom: 25px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  .banner-title
+    -webkit-justify-content: center
+    -moz-justify-content: center
+    -ms-justify-content: center
+    -o-justify-content: center
+    justify-content: center
+    font-size: 20px
+    line-height: 30px
+
+  .modal .title-modal
+    font-size: 25px
+    line-height: 27px
+    margin-bottom: 15px
+
+  .policy-nav
+    text-align: center
+
+  .banner-paragraph
+    font-size: 17px
+    line-height: 20px
+
+  .ladies-profile
+    width: 85%
+    &:nth-child(2n+1)
+      display: none
+
+  .search-profile-info
+    padding: 15px 5%
+
+  .ladies-profile
+    -webkit-flex-wrap: wrap
+    -moz-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    -o-flex-wrap: wrap
+    flex-wrap: wrap
+
+  .ladies-profile_left
+    max-height: 250px
+    width: 100%
+
+  .search-profile-info, .profile-button, .view-profile-button
+    width: 100%
+
+  .dates-holder
+    -webkit-flex-wrap: wrap
+    -moz-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    -o-flex-wrap: wrap
+    flex-wrap: wrap
+
+  .date-block
+    margin-bottom: 30px
+
+  .tours-dates_content
+    padding: 0
+
+  .day-block
+    margin-bottom: 20px
+
+  .modal .modal-dialog
+    width: 90%
+    margin-top: 25px
+
+  .modal-social-buttons
+    -webkit-flex-direction: column
+    -moz-flex-direction: column
+    -ms-flex-direction: column
+    -o-flex-direction: column
+    flex-direction: column
+
+  .btn-social
+    width: 100%
+    margin-bottom: 15px
+
+  .modal .exit
+    right: -8px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
