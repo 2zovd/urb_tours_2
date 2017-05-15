@@ -65,6 +65,11 @@ body
 
 
 /* general styles */
+.clearfix
+  &:after
+    content: ''
+    display: block
+    clear: both
 .btn-tour
   font-family: "RobotoSlabBold"
   font-size: 16px
@@ -83,6 +88,14 @@ body
   &:active, &:focus
     color: #fff
     background-color: #d92d3a
+
+.h2
+  font-size: 34px
+  font-family: "RobotoSlabBold"
+  margin-top: 0
+  margin-bottom: 35px
+  text-align: left
+  color: #292827
 /* general styles END */
 
 
@@ -367,6 +380,15 @@ body
   margin-bottom: 35px
   max-width: 400px
 
+.banner-title.small-banner
+  font-size: 34px
+  line-height: 44px
+  margin-bottom: 15px
+.banner-paragraph.small-banner
+  max-width: 325px
+  font-size: 22px
+  line-height: 32px
+
 .banner-btn
   display: inline-block
   background: -webkit-linear-gradient(left, #d81a29, #ea4c58)
@@ -538,6 +560,127 @@ body
     opacity: 1
 /* page top section END */
 
+/* slider section */
+.slider-wrapper
+  position: relative
+.slider-content
+  
+.slider-footer
+  position: absolute
+  bottom: 50px
+  left: 0
+  right: 0
+  z-index: 100
+.slide-cover
+  background-size: cover
+  background-position: center center
+  background-repeat: no-repeat
+  min-height: 670px
+.first-slide
+  background-image: url('../img/banner-01.jpg')
+.second-slide
+  background-image: url('../img/banner-02.jpg')
+.third-slide
+  background-image: url('../img/banner-03.jpg')
+.slider-pagination
+  .slick-dots
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    -webkit-display: flex
+    -moz-display: flex
+    -ms-display: flex
+    -o-display: flex
+    display: flex
+    -webkit-justify-content: flex-start
+    -moz-justify-content: flex-start
+    -ms-justify-content: flex-start
+    -o-justify-content: flex-start
+    justify-content: flex-start
+    margin-top: 5px
+    li
+      width: 9px
+      height: 9px
+      display: block
+      margin-right: 20px
+      overflow: hidden
+      background: #fff
+      &:hover
+        opacity: 0.9
+      button
+        display: block
+        font-size: 0
+        line-height: 0
+        border: none
+        outline: none
+        width: 9px
+        height: 9px
+        text-indent: 100%
+        white-space: nowrap
+        overflow: hidden
+      &:hover,
+      &:active
+        outline: none
+        box-shadow: none
+        background: none
+        border:none
+    li.slick-active
+      opacity: 0.5
+/* slider section END */
+
+/* about our tours */
+.about-tours
+  background-image: url('../img/about-tours.jpg')
+  background-repeat: no-repeat
+  background-size: 349px auto
+  background-position: 10% 0
+  margin-bottom: 200px
+  .h2
+    margin-top: 25px
+    margin-bottom: 45px
+.border-block
+  border: 3px solid #fd8891
+  border-radius: 7px
+  min-height: 320px
+  padding-top: 35px
+  padding-bottom: 100px
+  margin-bottom: 35px
+
+.read-more
+  display: inline-block
+  font-family: "RobotoLight"
+  font-size: 18px
+  line-height: 20px
+  color: #292827
+  padding-right: 53px
+  position: relative
+  margin-bottom: 35px
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    right: 0
+    top: 50%
+    -webkit-transform: translateY(-50%)
+    -ms-transform: translateY(-50%)
+    -o-transform: translateY(-50%)
+    transform: translateY(-50%)
+    width: 38px
+    height: 11px
+    background: url('../img/point.png') no-repeat 0 50%, url('../img/point.png') no-repeat 14px 50%, url('../img/point.png') no-repeat 27px 50%
+    background-size: 11px 11px, 11px 11px, 11px 11px
+    -webkit-transition: all .4s ease
+    -o-transition: all .4s ease
+    transition: all .4s ease
+  &:hover
+    &:after
+      -webkit-transform: translateY(-50%) rotate(180deg)
+      -ms-transform: translateY(-50%) rotate(180deg)
+      -o-transform: translateY(-50%) rotate(180deg)
+      transform: translateY(-50%) rotate(180deg)
+/* about our tours END */
+
 /* content navigation / scroll styles */
 .content-nav
   padding-top: 50px
@@ -547,10 +690,10 @@ body
   display: block
   min-height: 105px
   border: 2px solid #ea4c58
-  border-radius: 5px
+  border-radius: 10px
   font-family: 'RobotoSlabRegular'
   font-size: 19px
-  line-height: 22px
+  line-height: 25px
   color: #292827
   position: relative
   display: -webkit-flex
@@ -585,7 +728,7 @@ body
     -ms-transform: translateX(-50%)
     -o-transform: translateX(-50%)
     transform: translateX(-50%)
-    background: url('../img/ornament-separate.png') no-repeat 0 0
+    background: url('../img/ornament.png') no-repeat 0 0
 /* content navigation / scroll styles */
 
 /* contact us styles section */

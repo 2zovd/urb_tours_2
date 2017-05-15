@@ -20,3 +20,12 @@ $('.nav-mobile').click(function() {
 	$(this).removeClass('active');
 	$('.btn-mobile').removeClass('active');
 });
+
+$(document).ready(function(){
+  $('.slider-content').slick({
+    arrows: false,
+    dots: true,
+    appendDots:$(".slider-pagination"),
+    autoplay: true
+  });
+});

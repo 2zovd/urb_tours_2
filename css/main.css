@@ -109,6 +109,11 @@ body {
   line-height: 1.4; }
 
 /* general styles */
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
 .btn-tour {
   font-family: "RobotoSlabBold";
   font-size: 16px;
@@ -127,6 +132,14 @@ body {
   .btn-tour:active, .btn-tour:focus {
     color: #fff;
     background-color: #d92d3a; }
+
+.h2 {
+  font-size: 34px;
+  font-family: "RobotoSlabBold";
+  margin-top: 0;
+  margin-bottom: 35px;
+  text-align: left;
+  color: #292827; }
 
 /* general styles END */
 /* page top section START */
@@ -410,6 +423,16 @@ body {
   margin-bottom: 35px;
   max-width: 400px; }
 
+.banner-title.small-banner {
+  font-size: 34px;
+  line-height: 44px;
+  margin-bottom: 15px; }
+
+.banner-paragraph.small-banner {
+  max-width: 325px;
+  font-size: 22px;
+  line-height: 32px; }
+
 .banner-btn {
   display: inline-block;
   background: -webkit-linear-gradient(left, #d81a29, #ea4c58);
@@ -589,6 +612,129 @@ body {
     opacity: 1; }
 
 /* page top section END */
+/* slider section */
+.slider-wrapper {
+  position: relative; }
+
+.slider-footer {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  z-index: 100; }
+
+.slide-cover {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 670px; }
+
+.first-slide {
+  background-image: url("../img/banner-01.jpg"); }
+
+.second-slide {
+  background-image: url("../img/banner-02.jpg"); }
+
+.third-slide {
+  background-image: url("../img/banner-03.jpg"); }
+
+.slider-pagination .slick-dots {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: 5px; }
+  .slider-pagination .slick-dots li {
+    width: 9px;
+    height: 9px;
+    display: block;
+    margin-right: 20px;
+    overflow: hidden;
+    background: #fff; }
+    .slider-pagination .slick-dots li:hover {
+      opacity: 0.9; }
+    .slider-pagination .slick-dots li button {
+      display: block;
+      font-size: 0;
+      line-height: 0;
+      border: none;
+      outline: none;
+      width: 9px;
+      height: 9px;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden; }
+    .slider-pagination .slick-dots li:hover, .slider-pagination .slick-dots li:active {
+      outline: none;
+      box-shadow: none;
+      background: none; }
+  .slider-pagination .slick-dots li.slick-active {
+    opacity: 0.5; }
+
+/* slider section END */
+/* about our tours */
+.about-tours {
+  background-image: url("../img/about-tours.jpg");
+  background-repeat: no-repeat;
+  background-size: 349px auto;
+  background-position: 10% 0;
+  margin-bottom: 200px; }
+  .about-tours .h2 {
+    margin-top: 25px;
+    margin-bottom: 45px; }
+
+.border-block {
+  border: 3px solid #fd8891;
+  border-radius: 7px;
+  min-height: 320px;
+  padding-top: 35px;
+  padding-bottom: 100px;
+  margin-bottom: 35px; }
+
+.read-more {
+  display: inline-block;
+  font-family: "RobotoLight";
+  font-size: 18px;
+  line-height: 20px;
+  color: #292827;
+  padding-right: 53px;
+  position: relative;
+  margin-bottom: 35px; }
+  .read-more:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 38px;
+    height: 11px;
+    background: url("../img/point.png") no-repeat 0 50%, url("../img/point.png") no-repeat 14px 50%, url("../img/point.png") no-repeat 27px 50%;
+    background-size: 11px 11px, 11px 11px, 11px 11px;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease; }
+  .read-more:hover:after {
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    -ms-transform: translateY(-50%) rotate(180deg);
+    -o-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg); }
+
+/* about our tours END */
 /* content navigation / scroll styles */
 .content-nav {
   padding-top: 50px;
@@ -598,10 +744,10 @@ body {
   display: block;
   min-height: 105px;
   border: 2px solid #ea4c58;
-  border-radius: 5px;
+  border-radius: 10px;
   font-family: 'RobotoSlabRegular';
   font-size: 19px;
-  line-height: 22px;
+  line-height: 25px;
   color: #292827;
   position: relative;
   display: -webkit-flex;
@@ -640,7 +786,7 @@ body {
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
-    background: url("../img/ornament-separate.png") no-repeat 0 0; }
+    background: url("../img/ornament.png") no-repeat 0 0; }
 
 /* content navigation / scroll styles */
 /* contact us styles section */
@@ -1410,7 +1556,29 @@ input[type='checkbox'] {
     justify-content: center; }
   .tour-plan_holder {
     min-height: auto;
-    background-size: 280px auto; } }
+    background-size: 280px auto; }
+  .content-nav_link {
+    margin-bottom: 25px; }
+  .slider-pagination .slick-dots {
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .banner-title.small-banner {
+    font-size: 28px;
+    line-height: 32px; }
+  .banner-paragraph.small-banner {
+    font-size: 18px;
+    line-height: 22px; }
+  .slide-cover {
+    min-height: 470px;
+    background-position: 60% 0; }
+  .slider-footer {
+    bottom: 0; }
+  .about-tours {
+    background-position: 0 0; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -1524,7 +1692,16 @@ input[type='checkbox'] {
   .checkbox-item {
     margin: 15px 15px; }
   .footer-nav_col {
-    margin-bottom: 25px; } }
+    margin-bottom: 25px; }
+  .about-tours {
+    background-size: auto 350px;
+    background-position: 50% 75px;
+    margin-bottom: 50px; }
+  .border-block {
+    padding-top: 350px;
+    margin: 0 15px 35px; }
+  .read-hold {
+    text-align: center; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
