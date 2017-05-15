@@ -96,8 +96,73 @@ body
   margin-bottom: 35px
   text-align: left
   color: #292827
+
+.h2-ornament
+  text-align: center
+  padding-bottom: 45px
+  background: url('../img/ornament.png') no-repeat 50% 100%
 /* general styles END */
 
+/* edge section */
+.edge
+  margin-bottom: 250px
+
+.edge-card
+  width: 100%
+  box-shadow: 0 0 45px rgba(0,0,0,.15)
+
+.edge-card.active-card
+  position: relative
+  &:after
+    content: ''
+    display: block
+    width: 7px
+    height: 7px
+    background: #eee
+    -webkit-transform: rotate(45deg) translateX(-50%)
+    -ms-transform: rotate(45deg) translateX(-50%)
+    -o-transform: rotate(45deg) translateX(-50%)
+    transform: rotate(45deg) translateX(-50%)
+    position: absolute
+    left: 50%
+    bottom: 60px
+  .card-content
+    background: #ea4c58 url('../img/ornament-row.png') repeat-x 0 0
+
+.edge-card.second-card
+  .card-content
+    background: #a5a7b8
+.edge-card.third-card
+  .card-content
+    background: #bdbfca
+
+.edge-top
+  padding: 30px 0 35px
+  text-align: center
+  img
+    display: inline-block
+
+.card-content
+  padding: 50px 45px 0 45px
+  min-height: 470px
+
+.card-title
+  display: block
+  text-align: center
+  font-size: 24px
+  line-height: 25px
+  font-family: "RobotoSlabBold"
+  color: #fff
+  margin-bottom: 25px
+
+.card-text
+  display: block
+  text-align: center
+  color: #fff
+  font-size: 16px
+  line-height: 26px
+  font-family: "RobotoRegular"
+/* edge section END*/
 
 /* page top section START */
 .header-tours
