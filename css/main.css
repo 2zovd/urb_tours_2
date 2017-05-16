@@ -146,8 +146,16 @@ body {
   padding-bottom: 45px;
   background: url("../img/ornament.png") no-repeat 50% 100%; }
 
+.h4 {
+  display: block;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: 'RobotoSlabBold';
+  color: #000;
+  margin-bottom: 10px; }
+
 /* general styles END */
-/* edge section */
+/* edge | advantage section */
 .edge {
   margin-bottom: 250px; }
 
@@ -206,7 +214,102 @@ body {
   line-height: 26px;
   font-family: "RobotoRegular"; }
 
-/* edge section END*/
+/* edge | advantage section END*/
+/* upcoming tours */
+.upcoming-row {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-align-items: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.upcoming-col {
+  margin-bottom: 25px; }
+
+.upcoming-box {
+  height: 100%;
+  display: block;
+  border: 3px solid #fd8891;
+  border-radius: 7px;
+  padding-bottom: 25px;
+  margin-bottom: 25px; }
+  .upcoming-box:hover .upcoming-img {
+    width: 100%; }
+
+.upcoming-img {
+  position: relative;
+  height: 200px;
+  width: 107%;
+  overflow: hidden;
+  -webkit-transition: all .2s ease-in-out .1s;
+  -o-transition: all .2s ease-in-out .1s;
+  transition: all .2s ease-in-out .1s; }
+  .upcoming-img img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: auto; }
+
+.upcoming-header {
+  background: #ea4c58; }
+  .upcoming-header p {
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    font-family: 'RobotoSlabBold';
+    padding: 15px 0 15px 21px; }
+
+.upcoming-content {
+  padding: 0 15px 0; }
+  .upcoming-content p {
+    display: block;
+    font-family: 'RobotoLight';
+    color: #aaa;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px; }
+
+.upcoming-box.coming-soon .upcoming-header {
+  background-color: transparent; }
+  .upcoming-box.coming-soon .upcoming-header p {
+    color: #ea4c58; }
+
+.btn-notify-hold {
+  display: block;
+  text-align: center; }
+
+.btn-notify {
+  display: inline-block;
+  font-family: 'RobotoRegular';
+  color: #3f4cae;
+  padding: 0 55px;
+  font-size: 14px;
+  line-height: 36px;
+  border: 1px solid #3f4cae;
+  border-radius: 7px;
+  background: none;
+  -webkit-transition: all .15s;
+  -o-transition: all .15s;
+  transition: all .15s; }
+  .btn-notify:hover {
+    color: #fff;
+    background-color: #3f4cae; }
+
+/* upcoming tours END*/
 /* page top section START */
 .header-tours {
   padding-top: 20px;
@@ -766,6 +869,24 @@ body {
   padding-top: 35px;
   padding-bottom: 100px;
   margin-bottom: 35px; }
+
+.border-content {
+  display: block;
+  font-family: 'RobotoLight';
+  font-size: 16px;
+  line-height: 25px;
+  color: #292827;
+  position: relative; }
+  .border-content:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 65px;
+    width: 100%;
+    background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) no-repeat 0 0; }
 
 .read-more {
   display: inline-block;
@@ -1698,7 +1819,14 @@ input[type='checkbox'] {
   .tours-date {
     background-position: 50% 10%;
     background-size: auto 300px;
-    margin-bottom: 200px; } }
+    margin-bottom: 200px; }
+  .upcoming-img {
+    width: 100%;
+    height: auto; }
+    .upcoming-img img {
+      position: static;
+      width: 100%;
+      height: auto; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -1766,7 +1894,10 @@ input[type='checkbox'] {
     padding-top: 350px;
     margin: 0 15px 35px; }
   .read-hold {
-    text-align: center; } }
+    text-align: center; }
+  .upcoming-box {
+    max-width: 300px;
+    margin: 0 auto; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -1830,7 +1961,10 @@ input[type='checkbox'] {
     width: 100%;
     margin-bottom: 15px; }
   .modal .exit {
-    right: -8px; } }
+    right: -8px; }
+  .upcoming-box {
+    max-width: 270px;
+    margin: 0 auto; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
