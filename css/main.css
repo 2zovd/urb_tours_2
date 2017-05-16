@@ -235,7 +235,8 @@ body {
   outline: none;
   z-index: 100;
   padding: 50px 20px;
-  margin: 0; }
+  margin-left: 0;
+  margin-right: 0; }
   .flipster__button svg {
     stroke: #f24841; }
 
@@ -2019,7 +2020,8 @@ input[type='checkbox'] {
     outline: none;
     z-index: 100;
     padding: 50px 5px;
-    margin: 0; }
+    margin-left: 0;
+    margin-right: 0; }
   .edge-col {
     max-width: 100%;
     width: 85%; }
