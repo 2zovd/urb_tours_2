@@ -373,7 +373,7 @@ body {
 .header-btn {
   display: inline-block;
   border: 1px solid transparent;
-  border-font-family: "RobotoLight";
+  font-family: "RobotoLight";
   font-size: 14px;
   line-height: 31px;
   border-radius: 5px;
@@ -381,9 +381,9 @@ body {
   width: 100px;
   background: none;
   text-align: center;
-  -webkit-transition: all .1 ease .15s;
-  -o-transition: all .1 ease .15s;
-  transition: all .1 ease .15s;
+  -webkit-transition: all .1s ease .15s;
+  -o-transition: all .1s ease .15s;
+  transition: all .1s ease .15s;
   outline: none; }
 
 .btn-log-in {
@@ -2021,7 +2021,7 @@ input[type='checkbox'] {
     .flipster__button svg {
       stroke: #fff; }
   .edge-col {
-    max-width: auto;
+    max-width: 100%;
     width: 85%; }
   .card-content {
     min-height: 300px;
