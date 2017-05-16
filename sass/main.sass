@@ -116,30 +116,35 @@ body
 
 .edge-card
   width: 100%
+  margin-top: 15px
   box-shadow: 0 0 45px rgba(0,0,0,.15)
 
 .card-content
   padding: 50px 45px 70px 45px
   height: 100%
   min-height: 470px
+  -webkit-transition: all .25s
+  -o-transition: all .25s
+  transition: all .25s
 
-.edge-card.active-card
-  position: relative
-  &:after
-    content: ''
-    display: block
-    width: 7px
-    height: 7px
-    background: #eee
-    -webkit-transform: rotate(45deg) translateX(-50%)
-    -ms-transform: rotate(45deg) translateX(-50%)
-    -o-transform: rotate(45deg) translateX(-50%)
-    transform: rotate(45deg) translateX(-50%)
-    position: absolute
-    left: 50%
-    bottom: 60px
-  .card-content
-    background: #ea4c58 url('../img/ornament-row.png') repeat-x 0 0
+.edge-col.flipster__item.flipster__item--current
+  .edge-card
+    position: relative
+    &:after
+      content: ''
+      display: block
+      width: 7px
+      height: 7px
+      background: #eee
+      -webkit-transform: rotate(45deg) translateX(-50%)
+      -ms-transform: rotate(45deg) translateX(-50%)
+      -o-transform: rotate(45deg) translateX(-50%)
+      transform: rotate(45deg) translateX(-50%)
+      position: absolute
+      left: 50%
+      bottom: 60px
+    .card-content
+      background: #ea4c58 url('../img/ornament-row.png') repeat-x 0 0
 
 .edge-card.second-card
   .card-content
@@ -161,7 +166,7 @@ body
 
 .edge-col
   max-width: 350px
-  width: 90%
+  width: 100%
 
 .card-title
   display: block
@@ -183,8 +188,10 @@ body
 
 /* 3D carousel customization */
 .flipster__button
-  font-size: 6px
+  font-size: 8px
   outline: none
+  z-index: 100
+  padding: 50px 10px
   svg
     stroke: #f24841
 

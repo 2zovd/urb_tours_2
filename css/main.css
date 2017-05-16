@@ -161,16 +161,20 @@ body {
 
 .edge-card {
   width: 100%;
+  margin-top: 15px;
   box-shadow: 0 0 45px rgba(0, 0, 0, 0.15); }
 
 .card-content {
   padding: 50px 45px 70px 45px;
   height: 100%;
-  min-height: 470px; }
+  min-height: 470px;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s; }
 
-.edge-card.active-card {
+.edge-col.flipster__item.flipster__item--current .edge-card {
   position: relative; }
-  .edge-card.active-card:after {
+  .edge-col.flipster__item.flipster__item--current .edge-card:after {
     content: '';
     display: block;
     width: 7px;
@@ -183,7 +187,7 @@ body {
     position: absolute;
     left: 50%;
     bottom: 60px; }
-  .edge-card.active-card .card-content {
+  .edge-col.flipster__item.flipster__item--current .edge-card .card-content {
     background: #ea4c58 url("../img/ornament-row.png") repeat-x 0 0; }
 
 .edge-card.second-card .card-content {
@@ -205,7 +209,7 @@ body {
 
 .edge-col {
   max-width: 350px;
-  width: 90%; }
+  width: 100%; }
 
 .card-title {
   display: block;
@@ -227,8 +231,10 @@ body {
 /* edge | advantage section END*/
 /* 3D carousel customization */
 .flipster__button {
-  font-size: 6px;
-  outline: none; }
+  font-size: 8px;
+  outline: none;
+  z-index: 100;
+  padding: 50px 10px; }
   .flipster__button svg {
     stroke: #f24841; }
 
@@ -2006,7 +2012,22 @@ input[type='checkbox'] {
     right: -8px; }
   .upcoming-box {
     max-width: 260px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .flipster__button {
+    font-size: 8px;
+    outline: none;
+    z-index: 100;
+    padding: 50px 10px; }
+    .flipster__button svg {
+      stroke: #fff; }
+  .edge-col {
+    max-width: auto;
+    width: 85%; }
+  .card-content {
+    min-height: 300px;
+    padding: 50px 25px; }
+  .edge-col.flipster__item.flipster__item--current .edge-card:after {
+    bottom: 20px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {

@@ -65,7 +65,7 @@ $('.edge-container').flipster({
     // Adds a class (e.g. flipster--coverflow) to the flipster element to switch between display styles
     // Create your own theme in CSS and use this setting to have Flipster add the custom class
 
-    spacing: -0.25,
+    spacing: -0.35,
     // [number]
     // Space between items relative to each item's width. 0 for no spacing, negative values to overlap
 
